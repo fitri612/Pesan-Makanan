@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_margin="20px"
+        android:background="@drawable/bg_blue"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:src="@drawable/vector"
+            />
+
+        <LinearLayout
+            android:layout_margin="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan"
+                android:textSize="24dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-smallcaps"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makanan"
+                android:textSize="28dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/menumakanan"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginEnd="40px"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/bg_putih"
+            android:elevation="6px"
+            android:orientation="vertical"
+            android:padding="15px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_daftar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Menu Makanan"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pesanmakanan"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginEnd="40px"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/bg_putih"
+            android:elevation="6px"
+            android:orientation="vertical"
+            android:padding="15px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_pesan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Pesan Makanan"
+                android:textColor="#000" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
